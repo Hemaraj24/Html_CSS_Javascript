@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{ padding: 5px 20px;
+        line-height: 1;}
+    </style>
+    <script>
+        function printnos()
+        {
+        var i=document.getElementById("number").value;
+        var text = "";
+       
+        for(i;i >0;i--) 
+        {
+            text += i + "<br>";
+        }
+        document.getElementById("output").innerHTML = 'Numbers are:'+'<br/>'+'<br/>'+ text;
+       
+        }
+    </script>
+</head>
+    <h2>Descending order</h2>
+<body>
+
+    <div>
+        Enter Start number: 
+        <input type="text" id="number"/>
+    </div>
+   <br/>
+    <div>
+            <input type="button" value="Submit" onclick="printnos();">
+    </div>
+    <p id="output"></p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

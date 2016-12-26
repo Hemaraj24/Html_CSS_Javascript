@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        span{ padding: 5px 20px;
+        line-height: 1;}
+    </style>
+    <script>
+        function print()
+        {
+        var i=document.getElementById("start").value;
+        var k=document.getElementById("limit").value;
+        var text = "";
+       
+        for(i;i >=j;i++) 
+        {
+            text += i ;
+        }
+        document.getElementById("output").innerHTML = text;
+       
+        }
+    </script>
+</head>
+    <h2>Numbers</h2>
+<body>
+
+    <p>
+        Enter Start number: 
+        <input type="text" name="start" id="start"/>
+    </p>
+   
+     <p>
+        Enter Limit number: 
+        <input type="text" name="limit" id="limit"/>
+    </p>
+    <p >
+            <input type="button" value="Print" onclick="print();">
+    </p><br/>
+    <span id="output"></span>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table, th, td
+    {
+            line-height: 1;
+            border-style: solid;
+            width: 300px;
+            padding: 5px;
+    }
+    .firstCol 
+    {     /* gray*/
+        color:white;
+        background-color: lightslategray;
+        padding: 5px;
+    }
+    .secondCol 
+    {    /* green*/
+        background-color:green;
+        color:white;
+        width: 100px;
+        padding: 5px;
+    }
+     .thirdCol
+    {   /* paleturquoise*/
+        font-style: italic;
+        background-color: paleturquoise;
+        padding: 5px;
+    }
+    </style>
+   
+    <script src="jquery.js">
+    </script>
+    <script src="Calculate.js">
+    </script>
+     
+</head>
+<body>
+<h2><i>Mark Sheet </i></h2>
+<table>
+<tr>
+    <td class="firstCol">Full Name</td>
+   <td> <input type="text"  class="secondCol" id="Name" /></td> 
+</tr>
+<tr>
+    
+    <td class="firstCol">Roll No</td>
+    <td> <input type="text"  class="secondCol" id="Rollno" /></td>
+</tr>
+
+<tr>
+   <td class="thirdCol">Maths</td>
+    <td> <input type="text"  class="secondCol" id="Maths" /></td>
+</tr>
+ <tr>
+    <td class="thirdCol">English</td>
+    <td> <input type="text"  class="secondCol" id="English" /></td>
+</tr>
+ <tr>
+    <td class="thirdCol">Hindi</td>
+     <td> <input type="text"  class="secondCol" id="Hindi" /></td>
+</tr>
+ <tr>
+    <td class="thirdCol">Physics</td>
+    <td> <input type="text"  class="secondCol" id="Physics" /></td>
+</tr>
+<tr>
+    <td class="thirdCol">Chemistry</td>
+     <td> <input type="text"  class="secondCol" id="Chemistry" /></td>
+</tr>
+<tr>
+   <td class="firstCol">Total Marks</td>
+     <td class="secondCol" id="Totalmarks" ></td>
+    
+</tr>
+
+</table>
+    <br/>
+<button onclick="Calculate()">Calculate</button>
+</body>
+</html>
+

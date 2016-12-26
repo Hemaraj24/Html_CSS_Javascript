@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p{ padding: 5px 20px;
+        line-height: 1;}
+    </style>
+    <script>
+        function printnos()
+        {
+        var i=document.getElementById("number").value;
+        var limit=document.getElementById("limit").value;
+        var span=document.getElementById("output").value;
+        var text = "";
+       while(i<=limit)
+           {
+        var cal=i*1;
+        text=text+('Numbers are:'+'<br/>'+'<br/>'+ cal)
+        span.innerHTML=text;
+       i++;
+        }
+            
+       
+    </script>
+</head>
+    <h2>Descending order</h2>
+<body>
+
+    <div>
+        Enter Start number: 
+        <input type="text" id="number"/>
+    </div>
+   <br/>
+    <div>
+        Enter Limit number: 
+        <input type="text" id="limit"/>
+    </div>
+    <br/>
+    <div>
+            <input type="button" value="Submit" onclick="printnos();">
+    </div>
+    <p id="output"></p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

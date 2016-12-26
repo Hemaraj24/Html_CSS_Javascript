@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table, th, td{
+       line-height: 1;
+            border-style: solid;
+            padding: 20px 50px;
+            border-radius: 5px;
+            width: 300px;
+       padding: 5px;
+    }
+    .firstCol {
+        background-color: slategray;
+        padding: 5px;
+    }
+    .secondCol {
+        background-color: #00FF00;
+        width: 60px;
+        padding: 5px;
+    }
+    </style>
+    <script src="jquery.js">
+    </script>
+    <script src="fillValues.js">
+    /* function fillValues() 
+        {
+        var tdName = $("#name");
+        var tdRollNo = $("#rollno");
+        var tdTotalMarks = $("#totalMarks");
+        var jsonObj = {'name': '<b>Tej</b>', 'rollno': 100, 'totalMarks': 90};
+        tdName.html(jsonObj.name);
+        tdRollNo.text(jsonObj.rollno);
+        tdTotalMarks.text(jsonObj.totalMarks);
+        } */
+   
+    </script>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td class="firstCol">Full Name</td>
+    <td class="secondCol" id="Name"></td>
+  </tr>
+  <tr>
+    <td class="firstCol">Roll No</td>
+    <td class="secondCol" id="Rollno"></td>
+  </tr>
+
+  <tr>
+    <td class="firstCol">Maths</td>
+    <td class="secondCol" id="Maths"></td>
+  </tr>
+ <tr>
+    <td class="firstCol">English</td>
+    <td class="secondCol" id="English"></td>
+</tr>
+ <tr>
+    <td class="firstCol">Hindi</td>
+    <td class="secondCol" id="Hindi"></td>
+</tr>
+ <tr>
+    <td class="firstCol">Physics</td>
+    <td class="secondCol" id="Physics"></td>
+</tr>
+<tr>
+    <td class="firstCol">Chemistry</td>
+    <td class="secondCol" id="Chemistry"></td>
+</tr>
+<tr>
+    <td class="firstCol">Total Marks</td>
+    <td class="secondCol" id="Totalmarks"></td>
+
+</table>
+<button onclick="fillValues()">Fill Values</button>
+</body>
+</html>
+
